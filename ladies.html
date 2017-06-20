@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mahram Check - Are You My Mahram?</title>
+	
+	<title>Mahram Check - R U My Mahram?</title>
 
-	<meta name="description" content="Mahram Check - Are You My Mahram?">
+	<meta name="description" content="Are You My Mahram?">
 
-	<meta name="keywords" content="Islam, Muslim, Mahram, Muslimah, Check, Mahram Check, Mahram Checker">
+	<meta name="keywords" content="Islam, Muslim, Mahram, Muslimah, Check, Mahram Check, Mahram Checker, R U My Mahram">
 
-	<meta name="author" content="Tengku Hafidz">
+	<meta name="author" content="Tengku Hafidz Mohamad Shahiran Shafee">
 
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,10 +98,10 @@
 					<!-- Start Navigation Menu -->
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right" id="main_navigation_menu">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="men.html">For Men</a></li>
-							<li class="active"><a href="ladies.html">For Ladies</a></li>
-							<li><a href="about.html">About</a></li>										
+							<li><a href="index.html">R U My Mahram?</a></li>
+							<li><a href="men.html">Jejaka</a></li>
+							<li class="active"><a href="#header">Gegadis</a></li>
+							<li><a href="about.html">Tentang Aplikasi</a></li>										
 						</ul>
 					</div>
 					<!-- End Navigation Menu -->
@@ -109,41 +110,44 @@
 		</header>
 		<!-- End Header Section -->
 
-<hr>
+		<hr>
 		<!-- Start Services Section -->
 		<section id="ladies">
 			<div class="container">
-				<h1 class="section-title wow fadeIn" data-wow-delay=".2s">FOR LADIES<br><p class="lead" style="color:grey;">Before you salaam (physical handshake), make sure he is your mahram.</p>
+				<h1 class="section-title wow fadeIn" data-wow-delay=".2s">Gegadis<br>
+				<p class="lead" style="color:grey;">Sebelum anda bersalam-salaman, pastikan dia (si lelaki) adalah mahram anda.</p>
 				</h1>
 
 				<div class="row col-md-8 col-md-offset-2 wow fadeIn">
 					<div class="form-group">
 					  <label for="shirtType">Relationship:</label>
 					  <select class="form-control" id="relationshipWomen" onchange="checkWomen()">
-					    <option>Grandfather</option>
-					    <option>Uncle (Parent's Brother)</option>
-					    <option>Uncle (Husband of Parent's Sister)</option>
-					    <option>Father</option>
-					    <option>Brother</option>
-					    <option>Male Cousin</option>
-					    <option>Nephew (Son of Sibling)</option>
-					    <option>Nephew (Son of Spouse's Sibling)</option>
-					    <option>Grandfather In-Law</option>
-					    <option>Father In-Law</option>
-					    <option>Brother In-Law</option>
-					    <option>Son In-Law</option>
+					    <option>Datuk</option>
+					    <option>Bapa Saudara Kandung</option>
+					    <option>Bapa Saudara Sabit (Suami kepada Adik-Beradik Ibu Ayah)</option>
+					    <option>Ayah</option>
+					    <option>Abang</option>
+					    <option>Sepupu Lelaki</option>
+					    <option>Anak Saudara Lelaki (Anak Lelaki Adik-Beradik)</option>
+					    <option>Anak Saudara Lelaki (Anak Lelaki Adik-Beradik Suami)</option>
+						<option>Suami Adik-Beradik Perempuan</option>
+					    <option>Datuk Mertua</option>
+					    <option>Ayah Mertua</option>
+					    <option>Abang Ipar</option>
+					    <option>Menantu Lelaki</option>
 					  </select>
 					</div>
 
 					<div class="text-center" style="margin-top: 40px; font-size: 1.3em;">
 						<div id="chosenValuesWomen">							
-							<p>Your Grandfather Is A <strong><span style='color: #0bafa0'>Mahram<span> </strong>.</p>
-							<p> So please, salaam.</p></div>
+							<p>Datuk merupakan <strong><span style='color: #0bafa0'><br>mahram<span> </strong>.</p>
+							<p> Jadi anda boleh salam.</p>
+						</div>
 						<div id="mahramStatusWomenIcon"> 
 							<image width='50%' src='assets/img/handshake.png' />
 						</div>
 
-						<button type="button" class="btn btn-default" id="viewListWomen">Show/Hide List</button>
+						<button type="button" class="btn btn-default" id="viewListMen">Buka Senarai Mahram</button>
 
 					</div>
 				
@@ -153,7 +157,7 @@
 				<div class="row col-md-8 col-md-offset-2 wow fadeIn list" data-wow-delay=".2s" id="womenList">
 					<div class="panel panel-primary filterable">
 			            <div class="panel-heading">
-			                <h3 class="panel-title">Mahram Check For Ladies
+			                <h3 class="panel-title">Untuk Gegadis
 			                </h3>
 			                <div class="pull-right" style="height:3px;">
 			                    <button class="btn btn-default btn-xs btn-filter" style="margin-top:0px;padding:4px 7px;"><span style="margin-top:1px;"><span class="glyphicon glyphicon-filter"></span> Filter</span></button>
@@ -162,94 +166,93 @@
 						<table class="table">
 			                <thead>
 			                    <tr class="filters">
-			                        <th><input type="text" class="form-control" placeholder="Side" disabled></th>
-			                        <th><input type="text" class="form-control" placeholder="Relationship" disabled></th>
-			                        <th><input type="text" class="form-control" placeholder="Mahram Status" disabled></th>
+			                        <th><input type="text" class="form-control" placeholder="Sebelah" disabled></th>
+			                        <th><input type="text" class="form-control" placeholder="Hubungan" disabled></th>
+			                        <th><input type="text" class="form-control" placeholder="Mahram" disabled></th>
 			                    </tr>
 			                </thead>
 			                <tbody>
-			                    <tr class="active">
-			                        <td>Paternal</td>
-			                        <td>Grandfather</td>
+								<tr class="active">
+			                        <td>Ayah</td>
+			                        <td>Datuk</td>
 			                        <td class="mahram">Mahram Nasab</td>
 			                    </tr>
 			                    <tr class="active">
-			                        <td>Paternal</td>
-			                        <td>Uncle (Parent's Brother)</td>
+			                        <td>Ayah</td>
+			                        <td>Bapa Saudara Kandung</td>
 			                        <td class="mahram">Mahram Nasab</td>
 			                    </tr>
 			                    <tr class="active">
-			                        <td>Paternal</td>
-			                        <td>Uncle (Husband of Parent's Sister)</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Ayah</td>
+			                        <td>Bapa Saudara Sabit (Suami kepada Adik-Beradik Ayah)</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
 			                    <tr class="active">
-			                        <td>Paternal</td>
-			                        <td>Male Cousin</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Ayah</td>
+			                        <td>Saudara Lelaki</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
 			                    <tr class="default">
-			                        <td>Maternal</td>
-			                        <td>Grandfather</td>
+			                        <td>Ibu</td>
+			                        <td>Datuk</td>
 			                        <td class="mahram">Mahram Nasab</td>
 			                    </tr>
 			                    <tr  class="default">
-			                        <td>Maternal</td>
-			                        <td>Uncle</td>
+			                        <td>Ibu</td>
+			                        <td>Bapa Saudara Kandung</td>
 			                        <td class="mahram">Mahram Nasab</td>
 			                    </tr>
 			                    <tr class="default">
-			                        <td>Maternal</td>
-			                        <td>Aunt's husband</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Ibu</td>
+			                        <td>Bapa Saudara Sabit (Suami kepada Adik-Beradik Ibu)</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
 			                    <tr class="default">
-			                        <td>Maternal</td>
-			                        <td>Male Cousin</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Ibu</td>
+			                        <td>Sepupu Lelaki</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
 			                    <tr class="active">
-			                        <td>Own Side</td>
-			                        <td>Sister's Husband (Brother In-Law)</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Sendiri</td>
+			                        <td>Suami Adik-Beradik Perempuan</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
 			                    <tr class="active">
-			                        <td>Own Side</td>
-			                        <td>Brother</td>
+			                        <td>Sendiri</td>
+			                        <td>Adik-Beradik Lelaki</td>
 			                        <td class="mahram">Mahram Nasab</td>
 			                    </tr>	     
 			                    <tr class="active">
-			                        <td>Own Side</td>
-			                        <td>Nephew (Son of Sibling)</td>
+			                        <td>Sendiri</td>
+			                        <td>Anak Saudara Lelaki (Anak Lelaki Adik-Beradik)</td>
 			                        <td class="mahram">Mahram Nasab</td>
 			                    </tr>
 								<tr class="active">
-			                        <td>Own Side</td>
-			                        <td>Daughter's Husband (Son In-Law)</td>
+			                        <td>Sendiri</td>
+			                        <td>Menantu Lelaki</td>
 			                        <td class="mahram">Mahram Nikah</td>
 			                    </tr>			                    
 			                    <tr class="default">
-			                        <td>Husband's Side</td>
-			                        <td>Grandfather In-Law</td>
+			                        <td>Suami</td>
+			                        <td>Datuk Mertua</td>
 			                        <td class="mahram">Mahram Nikah</td>
 			                    </tr>
 								<tr class="default">
-			                        <td>Husband's Side</td>
-			                        <td>Father In-Law</td>
+			                        <td>Suami</td>
+			                        <td>Ayah Mertua</td>
 			                        <td class="mahram">Mahram Nikah</td>
 			                    </tr>	
 			                    <tr class="default">
-			                        <td>Husband's Side</td>
-			                        <td>Brother In-Law</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Suami</td>
+			                        <td>Abang Ipar</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
 			                    <tr class="default">
-			                        <td>Husband's Side</td>
-			                        <td>Nephew (Son of Spouse's Sibling)</td>
-			                        <td class="non">Non-Mahram</td>
+			                        <td>Suami</td>
+			                        <td>Anak Saudara Lelaki (Anak Lelaki Adik-Beradik Suami)</td>
+			                        <td class="non">Bukan Mahram</td>
 			                    </tr>
-	
-			                 </tbody>
+			                </tbody>
 			            </table>
 			        </div>
 				</div>
@@ -297,64 +300,38 @@
 		<script type="text/javascript">
 			//js for checking mahram 
 
-			function checkMen(){
-				relationshipMen = document.getElementById("relationshipMen").value
-				
-				mahramStatusMenText = "<p>Your " + relationshipMen + " Is A <strong><span style='color: #0bafa0'>Mahram<span> </strong>.</p><p> So please, salaam.</p>"
-				
-				mahramStatusMenIcon = "<image width='50%' src='assets/img/handshake.png' />"
-				
-				nonMahramMen = [
-					"Aunty (Wife of Parent's Brother)",
-					"Female Cousin",
-					"Brother's Wife (Sister In-Law)",
-					"Niece (Daughter of Spouse's Sibling)",
-					"Sister In-Law"
-				]
-
-				for(var i = 0; i < nonMahramMen.length; i++){
-					if (relationshipMen === nonMahramMen[i]) {
-						mahramStatusMenText = "<p>Your " + relationshipMen + " Is A <strong><span style='color: #95000b'> Non-Mahram<span></strong>.</p><p> So avoid any forms of physical contact, including salaam.</p>"
-						mahramStatusMenIcon = "<image width='50%' src='assets/img/nohandshake.png' />"
-					}
-				}
-
-				
-				document.getElementById("chosenValuesMen").innerHTML = mahramStatusMenText  
-
-
-				document.getElementById("mahramStatusMenIcon").innerHTML = mahramStatusMenIcon
-			}
-
 			function checkWomen(){
+
 				relationshipWomen = document.getElementById("relationshipWomen").value
 				
-				mahramStatusWomenText = "<p>Your " + relationshipWomen + " Is A <strong><span style='color: #0bafa0'>Mahram<span> </strong>.</p><p> So please, salaam.</p>"
+				mahramStatusWomenText = "<p>" + relationshipWomen + " merupakan <strong><span style='color: #0bafa0'><br>mahram<span> </strong>.</p><p> Jadi anda boleh salam.</p>"
 
 				mahramStatusWomenIcon = "<image width='50%' src='assets/img/handshake.png' />"
 
 
 				nonMahramWomen = [
-					"Uncle (Husband of Parent's Sister)",
-					"Male Cousin",
-					"Sister's Husband (Brother In-Law)",
-					"Nephew (Son of Spouse's Sibling)",
-					"Brother In-Law"
+					"Bapa Saudara Sabit (Suami kepada Adik-Beradik Ibu Ayah)",
+					"Sepupu Lelaki",
+					"Suami Adik-Beradik Perempuan",
+					"Anak Saudara Lelaki (Anak Lelaki Adik-Beradik Suami)",
+					"Abang Ipar"
 				]
 
 				for(var i = 0; i < nonMahramWomen.length; i++){
 					if (relationshipWomen === nonMahramWomen[i]) {
-						mahramStatusWomenText = "<p>Your " + relationshipWomen + " Is A <strong><span style='color: #95000b'> Non-Mahram<span></strong>.</p><p> So avoid any forms of physical contact, including salaam.</p>"
-
-						mahramStatusWomenIcon = "<image width='50%' src='assets/img/nohandshake.png'/>"
-
+						mahramStatusWomenText = "<p>" + relationshipWomen + " merupakan <strong><span style='color: #95000b'> <br>bukan mahram<span></strong>.</p><p> Jadi elakkan sebarang sentuhan fizikal, termasuklah salam ;)</p>"
+						mahramStatusWomenIcon = "<image width='50%' src='assets/img/nohandshake.png' />"
 					}
 				}
 
 				
 				document.getElementById("chosenValuesWomen").innerHTML = mahramStatusWomenText
 
-				 document.getElementById("mahramStatusWomenIcon").innerHTML = mahramStatusWomenIcon
+				console.log(mahramStatusWomenIcon);
+
+				console.log(document.getElementById("mahramStatusWomenIcon"));
+
+				document.getElementById("mahramStatusWomenIcon").innerHTML = mahramStatusWomenIcon
 
 			}
 		</script>
@@ -364,11 +341,6 @@
 		Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
 		*/
 		$(document).ready(function(){
-
-			$("#viewListMen").click(function() { 
-			    // assumes element with id='button'
-			    $("#menList").toggle();
-			});
 
 			$("#viewListWomen").click(function() { 
 			    // assumes element with id='button'
@@ -429,7 +401,7 @@
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-79875994-1', 'auto');
+	  ga('create', 'UA-101361278-1', 'auto');
 	  ga('send', 'pageview');
 
 	</script>
