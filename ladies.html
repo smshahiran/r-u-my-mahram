@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<title>Mahram Check - R U My Mahram?</title>
+	<title>R U My Mahram?</title>
 
 	<meta name="description" content="Are You My Mahram?">
 
@@ -102,7 +102,7 @@
 						<ul class="nav navbar-nav navbar-right" id="main_navigation_menu">
 							<li><a href="index.html">R U My Mahram?</a></li>
 							<li><a href="men.html">Jejaka</a></li>
-							<li class="active"><a href="#header">Gegadis</a></li>
+							<li class="active"><a href="#header">Gadis</a></li>
 							<li><a href="about.html">Tentang Aplikasi</a></li>										
 						</ul>
 					</div>
@@ -116,7 +116,7 @@
 		<!-- Start Services Section -->
 		<section id="ladies">
 			<div class="container">
-				<h1 class="section-title wow fadeIn" data-wow-delay=".2s">Gegadis<br>
+				<h1 class="section-title wow fadeIn" data-wow-delay=".2s">Gadis<br>
 				<p class="lead" style="color:grey;">Sebelum anda bersalam-salaman, pastikan dia (si lelaki) adalah mahram anda.</p>
 				</h1>
 
@@ -132,7 +132,6 @@
 					    <option>Sepupu Lelaki</option>
 					    <option>Anak Saudara Lelaki (Anak Lelaki Adik-Beradik)</option>
 					    <option>Anak Saudara Lelaki (Anak Lelaki Adik-Beradik Suami)</option>
-						<option>Suami Adik-Beradik Perempuan</option>
 					    <option>Datuk Mertua</option>
 					    <option>Ayah Mertua</option>
 					    <option>Abang Ipar</option>
@@ -149,8 +148,7 @@
 							<image width='50%' src='assets/img/handshake.png' />
 						</div>
 
-						<button type="button" class="btn btn-default" id="viewListMen">Buka Senarai Mahram</button>
-
+						<button type="button" class="btn btn-default" id="viewListWomen">Buka Senarai Mahram</button>
 					</div>
 				
 				</div>
@@ -159,7 +157,7 @@
 				<div class="row col-md-8 col-md-offset-2 wow fadeIn list" data-wow-delay=".2s" id="womenList">
 					<div class="panel panel-primary filterable">
 			            <div class="panel-heading">
-			                <h3 class="panel-title">Untuk Gegadis
+			                <h3 class="panel-title">Untuk Gadis
 			                </h3>
 			                <div class="pull-right" style="height:3px;">
 			                    <button class="btn btn-default btn-xs btn-filter" style="margin-top:0px;padding:4px 7px;"><span style="margin-top:1px;"><span class="glyphicon glyphicon-filter"></span> Filter</span></button>
@@ -258,6 +256,7 @@
 			            </table>
 			        </div>
 				</div>
+				
 			</div>
 		</section>
 		<!-- End Services Section-->		
@@ -314,7 +313,6 @@
 				nonMahramWomen = [
 					"Bapa Saudara Sabit (Suami kepada Adik-Beradik Ibu Ayah)",
 					"Sepupu Lelaki",
-					"Suami Adik-Beradik Perempuan",
 					"Anak Saudara Lelaki (Anak Lelaki Adik-Beradik Suami)",
 					"Abang Ipar"
 				]
@@ -404,7 +402,8 @@
 	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-101361278-1', 'auto');
-	  ga('send', 'pageview');
+	  ga('set', 'appName', 'RUMyMahram');
+	  ga('send', 'screenview', {screenName: 'ladies'});
 
 	</script>
 
