@@ -18,7 +18,7 @@ function setAboutBM() {
 	var header = '<h1 class="section-title wow fadeIn" data-wow-delay=".2s">Apa itu <br>R U My Mahram?</h1> ';
     var openText = '<div class="row col-md-8 col-md-offset-2 text-center wow fadeIn">';
     
-    var text = '<p class="lead">R U My Mahram? merupakan satu aplikasi yang membolehkan ada memeriksa siapa mahram dan siapa bukan mahram anda. Ringkasnya, kalau dia mahram anda maka anda boleh salam dengannya. Kalau bukan mahram, memang tak boleh la kan. Penerangan dalam aplikasi mungkin tidak sempurna. Anda boleh dapatkan khidmat nasihat ostad & ostajah anda bagi penerangan yang lebih padu.</p>';
+    var text = '<p class="lead">R U My Mahram? merupakan satu aplikasi yang membolehkan anda memeriksa siapa mahram dan siapa bukan mahram anda. Ringkasnya, kalau dia mahram anda maka anda boleh salam dengannya. Kalau bukan mahram, memang tak boleh la kan. Penerangan dalam aplikasi mungkin tidak sempurna. Anda boleh dapatkan khidmat nasihat ustaz & ustazah anda bagi penerangan yang lebih padu.</p>';
 	text = text + '<p class="lead">Setiap hubungan dalam aplikasi ini merupakan adalah terhad pada pertalian darah secara terus. Hubungan lebih kompleks akan ditambah jika ada permintaan.</p>';
     text = text + '<p class="lead">Sebarang maklum balas dan/atau pertanyaan, boleh lah hubungi saya di <a href="mailto:smshahiran@gmail.com">smshahiran@gmail.com</a>.</p>';
 
